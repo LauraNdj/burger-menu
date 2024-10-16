@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+    font-size: 1.6rem;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(68, 68, 68);
+}
+
+#navbar {
+    box-shadow: 2px 2px 8px -6px #101a67;
+}
+
+#mobileMenuTrigger {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#mobileMenuTrigger span {
+    display: block;
+    width: 3rem;
+    height: 0.3rem;
+    background-color: black;
+    margin: 0.5rem 0;
+    border-radius: 0.5rem;
+}
+
+.nav-logo-container {
+    border: solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 3rem;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin: 3rem 0 4rem;
+    text-align: center;
+    font-family: 'Red Hat Display', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav-links li {
+    border-bottom: 1px solid rgba(73, 80, 160, 0.123);
+    padding: 1rem 0 4rem;
+}
+
+.nav-socials {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 1.8rem;
+    padding-bottom: 3.5rem;
+}
+
+.nav-links-container {
+    border: solid;
+}
+
+[hidden] {
+    display: none;
+}
+
+@media (min-width: 768px) {
+
+    .nav-logo-container {
+        justify-content: center;
+        border: none;
+
+    }
+
+    #mobileMenuTrigger {
+        display: none;
+    }
+
+    #navigationLinks {
+        display: block;
+        border: none;
+    }
+
+    .nav-links {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .nav-links li {
+        border: none;
+        padding: 0;
+    }
+
+}

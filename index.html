@@ -1,11 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Burger menu - Test</title>
 </head>
+
 <body>
-    
+    <header>
+        <nav id="navbar" class="navigation">
+            <div class="nav-logo-container">
+                <a href="index.html" class="nav-logo">
+                    <img src="/assets/images/logo.svg" alt="Logo description" width="" height="">
+                </a>
+                <button id="mobileMenuTrigger" aria-expanded="false" aria-controls="navigationLinks"
+                    aria-label="Open and close navigation">
+                    <span class="burger-bar1"></span>
+                    <span class="burger-bar2"></span>
+                    <span class="burger-bar3"></span>
+                </button>
+            </div>
+            <div id="navigationLinks" class="nav-links-container" hidden>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="nav-socials">
+                    <a href="index.html" aria-label="Visit LinkedIn Page" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="index.html" aria-label="Visit Instagram Page" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="index.html" aria-label="Visit Tiktok Page" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <script src="js/script.js"></script>
 </body>
+
 </html>
